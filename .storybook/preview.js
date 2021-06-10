@@ -18,4 +18,5 @@ export const parameters = {
   },
 }
 
+addDecorator(story =><ThemeProvider theme={theme}><CSSReset/><Box>{story()}</Box></ThemeProvider>)
 addDecorator((storyFn, context) => withConsole() (storyFn)(context))
